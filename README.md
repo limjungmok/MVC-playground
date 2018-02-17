@@ -2,10 +2,12 @@
 
 ## Goal
 
-- [Hacker News](https://news.ycombinator.com/)와 (거의) 똑같은 UI 화면을 만드는 것이 이번 과제입니다.
-- [Hacker News stories API 문서](https://github.com/HackerNews/API#new-top-and-best-stories)를 참고하여 `topstories`, `newstories`, 혹은 `beststories`중 하나의 리스트를 보여주도록 UI를 만들어주세요.
-- 위 API로 GET 요청을 보내면 그에 대한 응답으로 아이템 id값들이 담긴 배열이 돌아옵니다. 각각의 아이템 id를 이용해 [Hacker News items API 문서](https://github.com/HackerNews/API#items)를 참고하여 각각의 아이템 상세 정보를 가져와야 합니다. 각각의 아이템 상세정보에 담긴 `title`과 `url` 정보를 이용하여 글 목록을 만들어 주세요.
-- 타이틀과 URL 이외의 추가적인 기능/정보들은 시간이 되시면 작업해주세요.
+- [Hacker News](https://news.ycombinator.com/)와 (꽤) 똑같은 UI 화면을 만드는 것이 이번 과제입니다.
+- [Hacker News stories API 문서](https://github.com/HackerNews/API#new-top-and-best-stories)를 참고하여 `topstories`, `newstories`, 혹은 `beststories`중 하나를 선택하여 해당 카테고리의 아이템 30개를 화면에 보여주도록 UI를 만들어주세요.
+- 각각의 아이템을 클릭했을 경우, 해당 아이템의 링크로 이동해야 합니다. (Hacker News 사이트 UX와 동일)
+- 각각의 아이템은, 해당 아이템의 타이틀, 작성자 이름을 보여주어야 합니다. 그 이외의 정보는 신경쓰지 않으셔도 됩니다.
+- CSS는 자유 입니다.
+- [Hacker News API](https://github.com/HackerNews/API#new-top-and-best-stories)로 GET 요청을 보내면 그에 대한 응답으로 아이템 id값들이 담긴 배열이 돌아옵니다. 각각의 아이템 id를 이용해 [Hacker News items API 문서](https://github.com/HackerNews/API#items)를 참고하여 각각의 아이템 상세 정보를 가져와야 합니다. 각각의 아이템 상세정보에 담긴 `title`과 `url`, 그리고 `by`(작성자) 정보를 이용하여 글 목록을 만들어 주세요.
 
 ---
 
