@@ -13,6 +13,7 @@
 - `https://hacker-news.firebaseio.com/v0/topstories.json`로 GET Request를 보내면 최신 아이템들의 아이디값이 담긴 정보를 반환해줍니다.
 - `https://hacker-news.firebaseio.com/v0/item/ITEM_ID.json`에서 `ITEM_ID` 부분을 실제 아이템 아이디 값으로 교체하여 GET Request를 보내면 해당 아이템에 대한 상세 정보를 얻을 수 있습니다.
 - 각각의 아이템 상세정보를 보시면 `title`(아이템 주제)과 `url`(아이템 URL), 그리고 `by`(아이템 작성자) 정보가 담겨 있습니다.
+- [Hacker News API 공식 문서](https://github.com/HackerNews/API)
 
 ---
 
