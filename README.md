@@ -3,11 +3,16 @@
 ## Goal
 
 - [Hacker News](https://news.ycombinator.com/)와 얼추 똑같은 UI 화면을 만드는 것이 이번 과제입니다.
-- [Hacker News stories API 문서](https://github.com/HackerNews/API#new-top-and-best-stories)를 참고하여 `topstories`, `newstories`, 혹은 `beststories`중 하나를 선택하여 해당 카테고리의 아이템 30개를 화면에 보여주도록 UI를 만들어주세요.
-- 각각의 아이템을 클릭했을 경우, 해당 아이템의 링크로 이동해야 합니다. (Hacker News 사이트 UX와 동일)
-- 각각의 아이템은, 해당 아이템의 타이틀, 작성자 이름을 보여주어야 합니다. 그 이외의 정보는 신경쓰지 않으셔도 됩니다.
+- 초기 구동시, `topstories` 카테고리의 최신 아이템 30개를 화면에 보여주세요. (아래 Hacker News API 설명 참조)
+- 각각의 아이템을 클릭했을 경우, 해당 아이템의 URL 링크로 이동해야 합니다. (Hacker News 사이트 UX와 동일)
+- 각각의 아이템은 화면에 해당 아이템의 주제와 작성자 이름을 보여주어야 합니다. 그 이외의 정보는 신경쓰지 않으셔도 됩니다.
 - CSS는 자유 입니다.
-- [Hacker News API](https://github.com/HackerNews/API#new-top-and-best-stories)로 GET 요청을 보내면 그에 대한 응답으로 아이템 id값들이 담긴 배열이 돌아옵니다. 각각의 아이템 id를 이용해 [Hacker News items API 문서](https://github.com/HackerNews/API#items)를 참고하여 각각의 아이템 상세 정보를 가져와야 합니다. 각각의 아이템 상세정보에 담긴 `title`과 `url`, 그리고 `by`(작성자) 정보를 이용하여 글 목록을 만들어 주세요.
+
+## Hacker News API
+
+- `https://hacker-news.firebaseio.com/v0/topstories.json`로 GET Request를 보내면 최신 아이템들의 아이디값이 담긴 정보를 반환해줍니다.
+- `https://hacker-news.firebaseio.com/v0/item/ITEM_ID.json`에서 `ITEM_ID` 부분을 실제 아이템 아이디 값으로 교체하여 GET Request를 보내면 해당 아이템에 대한 상세 정보를 얻을 수 있습니다.
+- 각각의 아이템 상세정보를 보시면 `title`(아이템 주제)과 `url`(아이템 URL), 그리고 `by`(아이템 작성자) 정보가 담겨 있습니다.
 
 ---
 
