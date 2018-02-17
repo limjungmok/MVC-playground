@@ -2,7 +2,7 @@
 
 ## Goal
 
-- [Hacker News](https://news.ycombinator.com/)와 (꽤) 똑같은 UI 화면을 만드는 것이 이번 과제입니다.
+- [Hacker News](https://news.ycombinator.com/)와 얼추 똑같은 UI 화면을 만드는 것이 이번 과제입니다.
 - [Hacker News stories API 문서](https://github.com/HackerNews/API#new-top-and-best-stories)를 참고하여 `topstories`, `newstories`, 혹은 `beststories`중 하나를 선택하여 해당 카테고리의 아이템 30개를 화면에 보여주도록 UI를 만들어주세요.
 - 각각의 아이템을 클릭했을 경우, 해당 아이템의 링크로 이동해야 합니다. (Hacker News 사이트 UX와 동일)
 - 각각의 아이템은, 해당 아이템의 타이틀, 작성자 이름을 보여주어야 합니다. 그 이외의 정보는 신경쓰지 않으셔도 됩니다.
