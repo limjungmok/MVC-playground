@@ -1,92 +1,20 @@
-# Hacker News
+## MVC TODO List APP(MVC playground)
 
-## Goal
+### View
+- event binding, **ONLY** execute callback form controller
+- classify EventListener for action from controller
+- DO NOT know about Model's anything
+  
+### Model
+- save data(using localStorage), **ONLY** execute callback from controller
+- DO NOT know about View's anything
+  
+### Controller
+- control between view and model
+- pass action to view with callback
+- pass content to model with callback
 
-- [Hacker News](https://news.ycombinator.com/)와 얼추 똑같은 UI 화면을 만드는 것이 이번 과제입니다.
-- 초기 구동시, `topstories` 카테고리의 최신 아이템 30개를 화면에 보여주세요. (아래 Hacker News API 설명 참조)
-- 각각의 아이템을 클릭했을 경우, 해당 아이템의 URL 링크로 이동해야 합니다. (Hacker News 사이트 UX와 동일)
-- 각각의 아이템은 화면에 해당 아이템의 주제와 작성자 이름을 보여주어야 합니다. 그 이외의 정보는 신경쓰지 않으셔도 됩니다.
-- CSS는 자유 입니다.
 
-## Hacker News API
-
-- `https://hacker-news.firebaseio.com/v0/topstories.json`로 GET Request를 보내면 최신 아이템들의 아이디값이 담긴 정보를 반환해줍니다.
-- `https://hacker-news.firebaseio.com/v0/item/ITEM_ID.json`에서 `ITEM_ID` 부분을 실제 아이템 아이디 값으로 교체하여 GET Request를 보내면 해당 아이템에 대한 상세 정보를 얻을 수 있습니다.
-- 각각의 아이템 상세정보를 보시면 `title`(아이템 주제)과 `url`(아이템 URL), 그리고 `by`(아이템 작성자) 정보가 담겨 있습니다.
-- [Hacker News API 공식 문서](https://github.com/HackerNews/API)
-
----
-
-### 도움말
-
-- [이벤트 걸기](https://developer.mozilla.org/ko/docs/Web/API/EventTarget/addEventListener)
-- [이벤트 종류](https://developer.mozilla.org/ko/docs/Web/Reference/Events)
-- [Element 만들기](https://developer.mozilla.org/ko/docs/Web/API/Document/createElement)
-- [여러개의 Element 찾기](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
-- [하나의 Element 찾기](https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector)
-- [Element HTML 수정](https://developer.mozilla.org/ko/docs/Web/API/Element/innerHTML)
-- [Element 텍스트 변경](https://developer.mozilla.org/ko/docs/Web/API/Node/textContent)
-- [Element 뒤로 추가](https://developer.mozilla.org/ko/docs/Web/API/Node/appendChild)
-- [Element 앞에 추가](https://developer.mozilla.org/ko/docs/Web/API/Node/insertBefore)
-- [Document API](https://developer.mozilla.org/ko/docs/Web/API/Document)
-- [Element API](https://developer.mozilla.org/ko/docs/Web/API/Element)
-- [Node API](https://developer.mozilla.org/ko/docs/Web/API/Node)
-
----
-
-### Installation
-
-- 우선 repository를 본인 Github 계정으로 fork해주세요. (바닐라코딩 repository 페이지 오른쪽 상단에 보시면 fork 버튼이 있습니다.)
-
-```
-// ** 본인이 원하는 디렉토리내에서 실행할 것. **
-
-// fork해온 프로젝트를 본인 컴퓨터에 다운받는 명령어
-git clone REMOTE_URL
-
-// 방금 clone한 디렉토리로 이동
-cd hacker-news
-
-// 작업에 필요한 구성 요소 설치
-npm install
-```
-
----
-
-### 쉽게 작업하는 법
-
-```
-// 프로젝트 디렉토리로 이동 후, 아래의 명령어를 실행시켜 보세요.
-// 브라우저에 자동으로 작업하는 페이지가 열리고,
-// 작업을 하시면서 변동 사항을 저장하시면 자동으로 브라우저는 변화를 감지하고 새로운 화면을 보여줍니다.
-npm start
-
-// 작업 끝내기
-MAC/Window: control + C
-```
-
----
-
-### 작업 내용 저장하는 법
-
-```
-// 프로젝트 디렉토리에서 아래의 명령어를 순서대로 실행한다.
-git status
-git add FILE_NAME
-git commit -m "COMMIT_MSG"
-git push origin master
-```
-
----
-
-### 작업 내용 Ken과 공유하는 법
-
-작업 내용 저장 후, 다음 링크의 방법을 따라하세요.[PR 만들기](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
-
-**영어 잘 이해 안되시면 슬랙 채널에 물어보세요!**
-
----
-
-### 주의
-
-- `src` 디렉토리내에서만 작업해주세요.
+### Spec
+- HTML + sass + js
+- Webpack
