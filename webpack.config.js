@@ -9,7 +9,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const config = {
   entry: [
     './src/index.js',
-    './src/style.less'
+    './public/index.scss'
   ],
   output: {
     path: path.resolve('dist'),
@@ -21,13 +21,17 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
         use: [
           'style-loader',
           'css-loader',
-          'less-loader'
+          'sass-loader'
         ]
+      },
+      {
+        test: /\.html$/,
+        loader: "html-loader"
       }
     ]
   },
